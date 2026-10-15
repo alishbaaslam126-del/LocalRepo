@@ -1,31 +1,4 @@
-#IF , ELIF,ELSE
-marks=75
-
-if marks >= 80:
-    print("Grade A")
-elif marks >= 60:
-    print("Grade B")
-
-else:
-    print("Grade C")
-
-print()
-       #NESTED IF
-marks = 75
-
-if marks >= 50:
-    print("Pass")
-
-    if marks >= 80:
-        print("Gade A")
-    else:
-        print("Grade B")
-else: 
-    print("Fail")
-
-print()
-
-        #for loop
+# For loop
 marks =[80,35,60,25,90]
 
 for mark in marks:
@@ -41,3 +14,30 @@ marks =50
 while marks <= 100:
     print(marks)
     marks +=10
+
+#Break statement
+for i in range(1, 6):
+    if i == 3:
+        break
+    print(i)
+
+#Continue statement
+for i in range(1, 6):
+    if i == 3:
+        continue
+    print(i)
+
+# Loop else
+for i in range(1, 4):
+    print(i)
+else:
+    print("Loop completed")
+
+    #While loop else
+i = 1
+
+while i <= 3:
+    print(i)
+    i += 1
+else:
+    print("Finished")
